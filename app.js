@@ -29,6 +29,9 @@ app.set('view engine', 'ejs');
 // Express body parser
 app.use(express.urlencoded({ extended: true }));
 
+//Static path
+app.use('/static', express.static('public'))
+
 // Express session
 app.use(
   session({
@@ -57,7 +60,6 @@ app.use(function(req, res, next) {
 app.use('/', require('./routes/index.js'));
 app.use('/users', require('./routes/users.js'));
 
-const PORT = process.env.PORT || 8000;
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, console.log(`Server running on  ${PORT}`));  

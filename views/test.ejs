@@ -1,49 +1,63 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>/Registration page</title>
-    <link rel="Stylesheet" type="text/css" href="css/bootstrap.css">
-   </head>
-   <body>
-    <div class="container">
-        <div class="row col-md-6 col-md-offset-3">
-            <div class="panel panel-primary">
-                <div class="panel-heading text-">
-                    <h1>Registration Form</h1>
-                    </div>
-                    <div class="panel-body">
-                        <form>
-                            <div class="form-group">
-                             <label for="firstName">First Name</label>
-                             <input type="text" class="form-control" id="firstName"/>
-                            </div>
-                            <div class ="form-group">
-                                <label for ="email">last Name</label>
-                                <input type ="text" class="form-control" id="lastName"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Gender</label>
-                            <div>
-                                <label for="male" class="radio-inline"><input type="radio" name="gender" id="male">Female</label>
-                                <label for="male" class="radio-inline"><input type="radio" name="gender" id="Female">male</label>
-                                <label for="male" class="radio-inline"><input type="radio" name="gender" id="others">Others</label>
-                            </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type ="text" class="form-control" id="email"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type ="text" class="form-control" id="password"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone number">Phone Number</label>
-                                <input type ="text" class="form-control" id="phone number"/>
-                            </div>
-                            </form>
-                        </div>
-                    <div class="panel-footer text-right">
-                        <small>&copy; accio</small>
-                        </div>
-                    </div>
+   <title>Registration Form</title>
+   <link rel="stylesheet"
+   href="/style.css" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <div class="register">
+            <h2>Register Here</h2>
+            <form id ="register" method="post">
+                <label>First Name : </label>
+                <br>
+                <input type="text"  name="fname"
+                id="name" placeholder="Enter Your First Name">
+                <br><br>
+                <label>Last Name : </label>
+                <br>
+                <input type="text" name="lname"
+                id="name" placeholder="Enter Your Last Name">
+                <br><br>
+                <label> Your Age : </label>
+                <br>
+                <input type="number" name="age"
+                id="name"  placeholder="How old are You?">
+                <br><br>
+                <label>Email</label>
+                <br>
+                <input type="email" name="email"
+                id="name" placeholder="Enter Your Valid Email Address">
+                <br><br>
+                <label>Gender : </label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type ="radio" name="gender" id="male">
+                &nbsp;
+                <span id="male">Male</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="female">
+                &nbsp;
+                <span id="female">Female</span>
+                <br><br>
+                <label>Known Language</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="lang" id="hindi">
+                &nbsp;
+                <span id="hindi">Hindi</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="lang" id="eng">
+                <span id="eng">English</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type ="checkbox" name="lang" id="marathi">
+                &nbsp;
+                <span id="marathi">Marathi</span>
+                <br><br>
+                <input type="submit" value="Submit"
+                name="submit" id="submit">
+            </form>
+    </div>
+</body>
+</html>

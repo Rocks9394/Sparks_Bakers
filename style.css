@@ -1,4 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto&display=swap');
+
 *{
-    box-sizing: border-box;
-    color: blue;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline:auto;
+}
+
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    background: #EE5335;
+    padding: 10px;
+    width: 100vw;
+}
+
+.nav-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+}
+.logo-div{
+    /* width: 20%; */
+}
+.middle-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+}
+.navUl>li{
+    list-style: none;
+}
+.middle-nav>li>a{
+    font-size: 21px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    color: white;
+    transition: all 2s;
+    text-decoration: none;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    /* width: 30%; */
+
+}    
+.left-nav>li{
+    list-style: none;
+    font-size: 21px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    color: white;
+    border: solid white 2px;
+    border-radius: 1rem;
+    padding: 5px 10px;
+    transition: all 0.7s;
+
+}    
+
+.middle-nav>li>a:hover{
+    text-decoration: underline;
+    /* transform: scale(1.01); */
+}
+
+.left-nav>li:hover{
+    color: #EE5335;
+    background: white;
+
+}
+.burgar-menu{
+    display: none;
+}
+.burgar-menu .img{
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+.block-nav-menu{
+    display: none;
+}
+.block-nav-menu>li>a{
+    font-size: 21px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    color: white;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.block-nav-menu>li>a:hover{
+    text-decoration: underline;
+
+}
+@media screen and(min-width:600px) {
+    .block-nav-menu{
+        font-display: none !important;
+    }
+}
+@media screen and (max-width:800px) {
+    .nav-div{
+        flex-wrap: wrap;
+    }
+    .logo-div{
+        padding-left:10px ;
+    }
+    .middle-nav{
+        display: none;
+    }
+    .left-nav{
+        /* width: 60% */
+    }
+    .burgar-menu{
+        display: block;
+        padding-right:20px ;
+    }
 }

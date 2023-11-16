@@ -12,6 +12,11 @@ width: 100%;
     border-radius: 50%;
 }
 
+/* carousal css */
+.carousel img{
+	height: 450px;
+}
+
 .footer-distributed{
 	background: #208dd6;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -191,10 +196,4 @@ width: 100%;
 		margin-left: 0;
 	}
 
-}
-
-/* carousal css */
-.carousel img{
-	height: 500px;
-	width: 100%;
 }

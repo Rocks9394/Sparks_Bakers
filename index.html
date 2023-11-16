@@ -49,7 +49,7 @@
             <a class="nav-link" aria-current="page" href="#products">Our Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#contact">About</a>
+            <a class="nav-link" aria-current="page" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#contact">Contact Us</a>
@@ -210,7 +210,6 @@
 
   <!-- main section -->
   <!-- #carousel section -->
-
   <div id="caouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -246,14 +245,95 @@
   </div>
   
   <!-- products -->
+
+  <!-- banner section -->  
+  <!-- banner 1 -->
+  <section class="banner1_section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center pt-3">
+          <h3>
+            Eating is a neccesity but Cooking is an Art
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque mollitia nostrum, eos minima dignissimos expedita veniam nulla asperiores saepe voluptas at eius quia ducimus maiores non ipsam architecto officiis sapiente.
+          </p>
+          <!-- <button class="btn btn-primary">Click Here</button> -->
+        </div>
+        <div class="col-md-6 text-center py-2">
+          <img src="./public/b1.jpg" class="img-fluid" style="max-height:250px;" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- banner 2 -->
+  <section class="banner2_section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center py-2">
+          <img src="./public/b2.jpg" class="img-fluid" style="max-height:250px;" alt="" />
+        </div>
+        <div class="col-md-6 text-center pt-3">
+          <h3>
+            We Serve you better than Others
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque mollitia nostrum, eos minima dignissimos expedita veniam nulla asperiores saepe voluptas at eius quia ducimus maiores non ipsam architecto officiis sapiente.
+          </p>
+          <!-- <button class="btn btn-primary">Click Here</button> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- about_US -->
+
+  <section id="about" class="about_section py-5">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>About</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatem soluta sed debitis quasi sint aliquid nesciunt quod eius omnis delectus vero quibusdam, optio enim ea autem quos tempora dicta.
+          </p>
+          <button class="btn btn-success">Click Here</button>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- contact_US -->
+  <section id="contact" class="py-5 backgrount1" style="background-color: #323946; color: #0ef;">
+    <div class="container">
+      <h3 class="text-center text-light">Contact Us</h3>
+      <dive class="row">
+        <div class="col-md-12">
+          <form action="/process-contact-form" method="post">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Your Email address</label>
+              <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="contactNumber" class="form-label">Your Contact Number</label>
+              <input name="contact" type="number" class="form-control" id="contactNumber">
+            </div>
+            <div class="form-floating mt-2">
+              <textarea name="query" style="height:150px;" class="form-control" placeholder="Enter your query here" id="queryField"></textarea>
+              <label for="queryField">Your Query</label>
+            </div>
+            <div class="container text-center">
+              <button type="submit" class="btn btn-outline-info btn-dark mt-3">Submit</button>
+            </div>
+          </form>
+        </div>
+      </dive>
+    </div>
+  </section>
   <!-- location section -->
-  <!-- footer section -->
   <div class="location text-center py-2">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.2950098120555!2d80.51592771490593!3d26.74814152450315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c197f88e3c1e9%3A0x11a7a03b8fda168a!2sCustomer%20Service%20Point!5e0!3m2!1sen!2sin!4v1700116347246!5m2!1sen!2sin" width="95%" height="350" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-
+  <!-- footer section -->
   <footer class="footer-distributed">
 
     <div class="footer-left">

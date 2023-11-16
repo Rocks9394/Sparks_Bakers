@@ -1,140 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto&display=swap');
-
 *{
-    margin:0;
-    padding:0;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+height: 100%;
+width: 100%;
+}
+.logo{
+    width: 50px;
+    border-radius: 50%;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
+.footer-distributed{
+	background: #208dd6;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
 }
 
-.container{
-    max-width: 1180px;
-    margin-inline:auto;
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
 }
 
-.display{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
 }
 
-.navbar{
-    background: #EE5335;
-    padding: 10px;
-    width: 100vw;
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
 }
 
-.nav-div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px 0;
-}
-.logo-div{
-    /* width: 20%; */
-}
-.middle-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 50%;
-}
-.navUl>li{
-    list-style: none;
-}
-.middle-nav>li>a{
-    font-size: 21px;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    color: white;
-    transition: all 2s;
-    text-decoration: none;
-}
-.left-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    /* width: 30%; */
-
-} 
-block-nav-menu{
-    display:none;
-}   
-.left-nav>li{
-    list-style: none;
-    font-size: 21px;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    color: white;
-    border: solid white 2px;
-    border-radius: 1rem;
-    padding: 5px 10px;
-    transition: all 0.7s;
-
-}    
-
-.middle-nav>li>a:hover{
-    text-decoration: underline;
-    /* transform: scale(1.01); */
+.footer-distributed h3 span{
+	color:  rgb(178, 32, 32);
 }
 
-.left-nav>li:hover{
-    color: #EE5335;
-    background: white;
+/* Footer links */
 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
 }
-.burgar-menu{
-    display: none;
-}
-.burgar-menu .img{
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-}
-.block-nav-menu{
-    display: none;
-}
-.block-nav-menu>li>a{
-    font-size: 21px;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    color: white;
-    padding-left: 10px;
-    text-decoration: none;
-}
-.block-nav-menu>li>a:hover{
-    text-decoration: underline;
 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
 }
-@media screen and(min-width:600px) {
-    .block-nav-menu{
-        font-display: none !important;
-    }
-    .block-nav-menu{
-        display:block;
-    }
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
 }
-@media screen and (max-width:800px) {
-    .nav-div{
-        flex-wrap: wrap;
-    }
-    .logo-div{
-        padding-left:10px ;
-    }
-    .middle-nav{
-        display: none;
-    }
-    .left-nav{
-        /* width: 60% */
-    }
-    .burgar-menu{
-        display: block;
-        padding-right:20px ;
-    }
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  white;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  white;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
 }

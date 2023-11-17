@@ -1,77 +1,288 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sparks Bakers</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sparks Bakers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 
 <body>
-  <div class="admin-header p-1" style="background-color: orange;">
-    <div class="header d-flex justify-content-between">
-      <div class="d-flex justify-content-center">
-        <a href="#mobile" class="text-center text-light px-5 text-decoration-none">
-          <i class="fa-solid fa-phone"></i>
-          <span>+91-9198552556</span>
-        </a>
-        <a href="mailto:sparksenterprises09@gmail.com" class="text-center text-light px-5 text-decoration-none">
-          <i class="fa-solid fa-envelope"></i>
-          <span>sparksenterprises09</span>
-        </a>
-      </div>
-      <div>
-        <a href="#adminLogin" class="text-light px-5 text-decoration-none">
-          <i class="fa-solid fa-user"></i>
-          <span>Admin Login</span>
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- header section -->
-  <nav class="navbar navbar-expand-lg p-2" style="background-color: #36b5e3;">
-    <div class="container-fluid">
-      <img class="logo" src="./public/logo.png" alt="logo">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerUsers"
-        aria-controls="navbarTogglerUsers" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerUsers">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#products">Our Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#contact">Contact Us</a>
-          </li>
-        </ul>
-        <div class="d-flex">
-          <button type="button" class="btn btn-success m-2" data-bs-toggle="modal" data-bs-target="#loginModal">
-            Login
-          </button>
-          <button type="button" class="btn btn-success m-2" data-bs-toggle="modal" data-bs-target="#signupModal">
-            Signup
-          </button>
-        </div>
-        <!-- <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-      </div>
-    </div>
-  </nav>
 
-  <!-- login modal  -->
+    <!-- header section -->
+    <div class="admin-header p-1" style="background-color: orange;">
+        <div class="header d-flex justify-content-between">
+            <div class="d-flex justify-content-center">
+                <a href="#mobile" class="text-center text-light px-5 text-decoration-none">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91-9198552556</span>
+                </a>
+                <a href="mailto:sparksenterprises09@gmail.com" class="text-center text-light px-5 text-decoration-none">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>sparksenterprises09</span>
+                </a>
+            </div>
+            <div>
+                <a href="#adminLogin" class="text-light px-5 text-decoration-none">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Admin Login</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #36b5e3;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <img class="logo" src="./public/logo.png" alt="logo" style="width: 50px; border-radius: 50%;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#products">Our Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-success m-2" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                        Login
+                    </button>
+                    <button type="button" class="btn btn-success m-2" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">
+                        Signup
+                    </button>
+                </div>
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- main section -->
+    <!-- caorusel -->
+    <div id="caouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./public/cake1.jpg" class="d-block w-100" alt="image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./public/cake2.jpg" class="d-block w-100" alt="image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./public/cake3.jpg" class="d-block w-100" alt="image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#caouselFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#caouselFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- products -->
+
+    <!-- banner section -->
+    <!-- banner 1 -->
+    <section class="banner1_section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center pt-3">
+                    <h3>
+                        Eating is a neccesity but Cooking is an Art
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque mollitia nostrum, eos
+                        minima
+                        dignissimos expedita veniam nulla asperiores saepe voluptas at eius quia ducimus maiores non
+                        ipsam
+                        architecto officiis sapiente.
+                    </p>
+                    <!-- <button class="btn btn-primary">Click Here</button> -->
+                </div>
+                <div class="col-md-6 text-center py-2">
+                    <img src="./public/b1.jpg" class="img-fluid" style="max-height:250px;" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner 2 -->
+    <section class="banner2_section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center py-2">
+                    <img src="./public/b2.jpg" class="img-fluid" style="max-height:250px;" alt="" />
+                </div>
+                <div class="col-md-6 text-center pt-3">
+                    <h3>
+                        We Serve you better than Others
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque mollitia nostrum, eos
+                        minima
+                        dignissimos expedita veniam nulla asperiores saepe voluptas at eius quia ducimus maiores non
+                        ipsam
+                        architecto officiis sapiente.
+                    </p>
+                    <!-- <button class="btn btn-primary">Click Here</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about_US -->
+
+    <section id="about" class="about_section py-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>About</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatem soluta sed
+                        debitis quasi
+                        sint aliquid nesciunt quod eius omnis delectus vero quibusdam, optio enim ea autem quos tempora
+                        dicta.
+                    </p>
+                    <button class="btn btn-success">Click Here</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact_US -->
+    <section id="contact" class="py-5 backgrount1" style="background-color: #323946; color: #0ef;">
+        <div class="container">
+            <h3 class="text-center text-light">Contact Us</h3>
+            <dive class="row">
+                <div class="col-md-12">
+                    <form action="/process-contact-form" method="post">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Your Email address</label>
+                            <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactNumber" class="form-label">Your Contact Number</label>
+                            <input name="contact" type="number" class="form-control" id="contactNumber">
+                        </div>
+                        <div class="form-floating mt-2">
+                            <textarea name="query" style="height:150px;" class="form-control"
+                                placeholder="Enter your query here" id="queryField"></textarea>
+                            <label for="queryField">Your Query</label>
+                        </div>
+                        <div class="container text-center">
+                            <button type="submit" class="btn btn-outline-info btn-dark mt-3">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </dive>
+        </div>
+    </section>
+    <!-- location section -->
+    <div class="location text-center py-2">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.2950098120555!2d80.51592771490593!3d26.74814152450315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c197f88e3c1e9%3A0x11a7a03b8fda168a!2sCustomer%20Service%20Point!5e0!3m2!1sen!2sin!4v1700116347246!5m2!1sen!2sin"
+            width="95%" height="350" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- footer section -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3><img src="./public/logo.png" alt="logo" style="width: 100px; border-radius: 50%;"><span>Sparks
+                    Enterprises</span></h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+
+                <a href="#">Blog</a>
+
+                <a href="#">Pricing</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Sparks Enterprises © 2023</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Munshiganj</span>Post Rasulabad, Unnao</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91-9198552556</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:sparksenterprises09@gmail.com">sparksenterprises09</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+                vehicula sit amet.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+     <!-- login modal  -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -208,205 +419,10 @@
     </div>
   </div>
 
-  <!-- main section -->
-  <!-- #carousel section -->
-  <div id="caouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./public/cake1.jpg" class="d-block w-100" alt="image">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./public/cake2.jpg" class="d-block w-100" alt="image">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./public/cake3.jpg" class="d-block w-100" alt="image">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#caouselFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#caouselFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  
-  <!-- products -->
 
-  <!-- banner section -->  
-  <!-- banner 1 -->
-  <section class="banner1_section py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center pt-3">
-          <h3>
-            Eating is a neccesity but Cooking is an Art
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque mollitia nostrum, eos minima dignissimos expedita veniam nulla asperiores saepe voluptas at eius quia ducimus maiores non ipsam architecto officiis sapiente.
-          </p>
-          <!-- <button class="btn btn-primary">Click Here</button> -->
-        </div>
-        <div class="col-md-6 text-center py-2">
-          <img src="./public/b1.jpg" class="img-fluid" style="max-height:250px;" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- banner 2 -->
-  <section class="banner2_section py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center py-2">
-          <img src="./public/b2.jpg" class="img-fluid" style="max-height:250px;" alt="" />
-        </div>
-        <div class="col-md-6 text-center pt-3">
-          <h3>
-            We Serve you better than Others
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque mollitia nostrum, eos minima dignissimos expedita veniam nulla asperiores saepe voluptas at eius quia ducimus maiores non ipsam architecto officiis sapiente.
-          </p>
-          <!-- <button class="btn btn-primary">Click Here</button> -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- about_US -->
-
-  <section id="about" class="about_section py-5">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-12">
-          <h3>About</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatem soluta sed debitis quasi sint aliquid nesciunt quod eius omnis delectus vero quibusdam, optio enim ea autem quos tempora dicta.
-          </p>
-          <button class="btn btn-success">Click Here</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- contact_US -->
-  <section id="contact" class="py-5 backgrount1" style="background-color: #323946; color: #0ef;">
-    <div class="container">
-      <h3 class="text-center text-light">Contact Us</h3>
-      <dive class="row">
-        <div class="col-md-12">
-          <form action="/process-contact-form" method="post">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Your Email address</label>
-              <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="contactNumber" class="form-label">Your Contact Number</label>
-              <input name="contact" type="number" class="form-control" id="contactNumber">
-            </div>
-            <div class="form-floating mt-2">
-              <textarea name="query" style="height:150px;" class="form-control" placeholder="Enter your query here" id="queryField"></textarea>
-              <label for="queryField">Your Query</label>
-            </div>
-            <div class="container text-center">
-              <button type="submit" class="btn btn-outline-info btn-dark mt-3">Submit</button>
-            </div>
-          </form>
-        </div>
-      </dive>
-    </div>
-  </section>
-  <!-- location section -->
-  <div class="location text-center py-2">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.2950098120555!2d80.51592771490593!3d26.74814152450315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c197f88e3c1e9%3A0x11a7a03b8fda168a!2sCustomer%20Service%20Point!5e0!3m2!1sen!2sin!4v1700116347246!5m2!1sen!2sin" width="95%" height="350" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-  <!-- footer section -->
-  <footer class="footer-distributed">
-
-    <div class="footer-left">
-
-      <h3><img src="./public/logo.png" alt="logo" style="width: 100px; border-radius: 50%;"><span>Sparks Enterprises</span></h3>
-
-      <p class="footer-links">
-        <a href="#" class="link-1">Home</a>
-        
-        <a href="#">Blog</a>
-      
-        <a href="#">Pricing</a>
-      
-        <a href="#">About</a>
-        
-        <a href="#">Faq</a>
-        
-        <a href="#">Contact</a>
-      </p>
-
-      <p class="footer-company-name">Sparks Enterprises © 2023</p>
-    </div>
-
-    <div class="footer-center">
-
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <p><span>Munshiganj</span>Post Rasulabad, Unnao</p>
-      </div>
-
-      <div>
-        <i class="fa fa-phone"></i>
-        <p>+91-9198552556</p>
-      </div>
-
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="mailto:sparksenterprises09@gmail.com">sparksenterprises09</a></p>
-      </div>
-
-    </div>
-
-    <div class="footer-right">
-
-      <p class="footer-company-about">
-        <span>About the company</span>
-        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-      </p>
-
-      <div class="footer-icons">
-
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-
-      </div>
-
-    </div>
-
-  </footer>
-
-  <!-- script added -->
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
